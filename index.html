@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to My Website</h1>
+                <p class="subtitle">Next-Generation Internet Programming & Web Architecture</p>
+                <button class="my-button">Explore Web Technologies</button>
+            </div>
+        </header>
+
+        <div class="scrolling-wrapper">
+            <div class="scrolling-track">
+                <div class="scroll-content">
+                    <span>Mastering Web Protocols & HTTP Requests</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>HTTP/1.1</text></svg>" alt="tech">
+                    <span>Configuring LAMP/WAMP Environments</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>SERVER</text></svg>" alt="tech">
+                    <span>Building Advanced Client-Server Interactions</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>NETWORK</text></svg>" alt="tech">
+                </div>
+                <div class="scroll-content">
+                    <span>Mastering Web Protocols & HTTP Requests</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>HTTP/1.1</text></svg>" alt="tech">
+                    <span>Configuring LAMP/WAMP Environments</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>SERVER</text></svg>" alt="tech">
+                    <span>Building Advanced Client-Server Interactions</span>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' fill='%230000ff'/><text x='60' y='25' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>NETWORK</text></svg>" alt="tech">
+                </div>
+            </div>
+        </div>
+
+        <section class="grid-section">
+            <div class="grid-container">
+                <div class="grid-item" onclick="openModal('Web Protocols', 'Dive deep into the foundation of data communication for the World Wide Web. This covers HTTP/1.1 and HTTP/2, understanding TCP/IP handshakes, GET and POST request methods, and deciphering server status codes (like 200 OK or 404 Not Found).', '🌐')">
+                    <div class="item-icon">🌐</div>
+                    <h3>Web Protocols</h3>
+                    <p>Understanding HTTP request and response messages for seamless global web communication and networking.</p>
+                </div>
+                
+                <div class="grid-item" onclick="openModal('LAMP & WAMP', 'LAMP (Linux, Apache, MySQL, PHP) and WAMP (Windows variant) are foundational software stacks. You will learn how to configure a local server environment to test server-side scripts and manage databases before deploying to a live web server.', '⚙️')">
+                    <div class="item-icon">⚙️</div>
+                    <h3>LAMP & WAMP</h3>
+                    <p>Configuring robust environments and analyzing the deep fundamentals of back-end web technologies.</p>
+                </div>
+                
+                <div class="grid-item" onclick="openModal('Responsive Grids', 'CSS Grid Layout excels at dividing a page into major regions. It allows you to define rows and columns, utilize fractional units, and apply media queries to ensure your website looks perfect on all client screens.', '📱')">
+                    <div class="item-icon">📱</div>
+                    <h3>Responsive Grids</h3>
+                    <p>Utilizing CSS grids to create structured layouts that instantly adapt to any client screen size.</p>
+                </div>
+                
+                <div class="grid-item" onclick="openModal('Modern Styling', 'Cascading Style Sheets (CSS3) bring life to HTML. This includes implementing standard web-safe fonts like Cambria, establishing a cohesive blue color palette, and adding interactive pseudo-classes for hover states.', '🎨')">
+                    <div class="item-icon">🎨</div>
+                    <h3>Modern Styling</h3>
+                    <p>Applying structured Cambria fonts, dynamic blue color themes, and smooth CSS3 transition effects.</p>
+                </div>
+                
+                <div class="grid-item" onclick="openModal('Web Servers', 'A web server is a computer that stores web server software and a website\'s component files. You will explore Apache and Nginx configurations, understand port listening, and learn how servers handle concurrent client connections.', '🚀')">
+                    <div class="item-icon">🚀</div>
+                    <h3>Web Servers</h3>
+                    <p>Optimizing web clients and servers for lightning-fast content delivery across the World Wide Web.</p>
+                </div>
+                
+                <div class="grid-item" onclick="openModal('Media Integration', 'Modern web pages require dynamic media handling. This covers implementing responsive images, vector graphics (SVG), handling encoded data securely, and integrating HTML5 media tags for an immersive user experience.', '🖼️')">
+                    <div class="item-icon">🖼️</div>
+                    <h3>Media Integration</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='90'><rect width='200' height='90' fill='%23ffffff' stroke='%230000ff' stroke-width='4'/><text x='100' y='50' font-family='sans-serif' font-size='16' fill='%230000ff' text-anchor='middle'>Dynamic Media</text></svg>" alt="media" class="feature-img">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="student-badge">
+        <span class="name">chakradhar.G</span>
+        <span class="reg">192311439</span>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalIcon" class="modal-icon-header"></div>
+            <h2 id="modalTitle">Title</h2>
+            <div class="modal-divider"></div>
+            <p id="modalDesc">Description goes here.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, description, icon) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = description;
+            document.getElementById('modalIcon').innerText = icon;
+            document.getElementById('infoModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('infoModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
